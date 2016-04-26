@@ -1,0 +1,16 @@
+2016/Apr/11 09:56:36=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:56:45=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:56:57=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:56:59=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:57:06=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:57:10=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:57:24=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:57:36=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:58:00=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:58:23=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:58:42=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:58:45=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:59:03=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:59:20=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:59:32=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];
+2016/Apr/11 09:59:46=>[code:11006;info:undefined operation or illegal operation name;wrongFile:C:\xampp\htdocs\projectmanager\RTP\Module\AutomaticallyModule.class.php;wrongLine:102];

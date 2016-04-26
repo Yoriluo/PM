@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="uk-height-1-1" style="background: rgb(243,243,243)">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Project Management of Rippletec</title>
+        <link rel="stylesheet" href="css/uikit.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script type="text/javascript" src="js/same_func.js"></script>
+        <script src="js/task_detail.js"></script>
+        <link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
+        <script type="text/javascript" src='sweetalert/dist/sweetalert.min.js'></script>
+    </head>
+<body>
+  <header class="head-navbar ">
+            <div class="header-lay uk-container-center">
+                <div class="logo uk-width-1-10 uk-float-left">LOGO</div>
+                <div class="headline uk-width-1-6 uk-float-left uk-margin--top">
+                    <div class="headline_lay">项目管理系统</div>
+                </div>
+                 <ul class="nav uk-nav uk-float-right">
+            	<li class="user">
+            		<div class="user_pic"><img src="images/user_pic.jpg"></div>
+            		<div class="user_name">小明</div>
+            	</li>
+            	<li class="selector">&#xe700;
+            		<ul class="sel_list">
+            			<li class="index">首页</li>	
+            			<li class="set_task">创建项目</li>
+            		</ul>
+            	</li>
+            	<li class="news">&#xe731;
+            		<div class="news_num">1</div>
+            	</li>
+            	<li class="operation">&#xe68a;
+            		<ul class="operat_list">
+            			<li class="change_pas">修改密码</li>
+            			<li class="exit">退出登录</li>
+            		</ul>
+            	</li>
+            </ul>
+            </div>
+            <div class="alert uk-container-center"></div>
+        </header> 
+        <div class="task_content uk-container-center">
+        	<div class="sidebar">
+        		<div class="sidebar_top">
+        			<div class="sidebar_color"></div>
+        			<div class="sidebar_project_name">学生项目管理系统</div>
+        		</div>
+        		<div class="sidebar_main">
+        			<div id="sidebar_main_lay">
+        				<div class="stage_title one_stage">
+        					
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="main">
+        		<div class="main_title">
+        			<div class="main_title_left">
+        			<div class="code_title">项目邀请代码：</div>
+        			<div class="code">sdfjlkdsjdsfjkj</div>
+        			<div class="clr"></div>
+        			<div class="table_title">
+        				<div class="table_pic"><img src="images/time.png"></div>
+        				<div class="table_name">项目时间规划表</div>
+        			</div>
+        			</div>
+        			<div class="main_title_right">
+        				<div class="set_task_btn">＋新建任务</div>
+        				<div class="finish_task_btn">√完成项目</div>
+        			</div>
+        		</div>
+        		<div id="main_task_content">
+        			<div id="main_task_content_lay" onmousedown="small_down(event)">
+        				<dl class="task_time">
+                               
+        				</dl>
+                        <dl class="task_time_detail">
+  
+                        </dl>
+        				<div class="task_line_box">
+        				
+        				</div>
+        				<dl class="clr"></dl>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="clr"></div>
+        </div>
+<script language="javascript">
+    var hole_width=0;
+        hole_height=0;
+    $(document).on('mouseover','#main_task_content_lay',function(){
+        var lay_width = $(this).outerWidth();
+            lay_height = $(this).outerHeight();
+             hole_width = lay_width;
+             hole_height = lay_height;
+    });
+var main_width = document.getElementById('main_task_content').offsetWidth;
+    main_height = document.getElementById('main_task_content').offsetHeight;
+
+	function small_down(e){
+        width_cha = main_width-hole_width;
+        height_cha =main_height-hole_height-33;
+		var obig=document.getElementById("main_task_content");
+		var osmall=document.getElementById("main_task_content_lay");
+        var sidebar_main_lay = document.getElementById('sidebar_main_lay');
+		var e=e||window.event;
+
+
+		document.onmousemove=small_move;
+		document.onmouseup=small_up;
+
+
+
+        osmall.startX=e.clientX-osmall.offsetLeft;
+		osmall.startY=e.clientY-osmall.offsetTop;
+	}
+	function small_move(e){
+		var obig=document.getElementById("main_task_content");
+		var osmall=document.getElementById("main_task_content_lay");
+        var sidebar_main_lay = document.getElementById('sidebar_main_lay');
+		var e=e||window.event;
+        if(width_cha<0){
+            osmall.style.left=e.clientX-osmall.startX+"px";
+        }
+        if(height_cha<0){
+          osmall.style.top=e.clientY-osmall.startY+"px";  
+          if(e.clientY-osmall.startY>height_cha)  {
+            if(e.clientY-osmall.startY>=0){
+                sidebar_main_lay.style.marginTop=e.clientY-osmall.start+'px';
+            }
+            else{sidebar_main_lay.style.marginTop=e.clientY-osmall.startY-30+'px';}
+             if(Number(sidebar_main_lay.style.marginTop.substring(0,sidebar_main_lay.style.marginTop.length-2))>0){
+                 sidebar_main_lay.style.marginTop=0+'px';
+             }
+          }
+        }
+
+
+		if(width_cha<0){
+            if(e.clientX-osmall.startX>=0){ osmall.style.left=0+"px";}
+             if(e.clientX-osmall.startX<=width_cha){ osmall.style.left=width_cha-33+"px";}
+        }
+		if(height_cha<0){
+            if(e.clientY-osmall.startY>=0){ osmall.style.top=0+"px";}
+        if(e.clientY-osmall.startY<=height_cha){ osmall.style.top=height_cha-30+"px";}
+        }
+	}
+	function small_up(){
+		document.onmousemove="";
+		document.onmouseup="";
+	}
+</script>
+
+</body>
+</html>

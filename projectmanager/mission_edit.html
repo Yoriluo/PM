@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="uk-height-1-1" style="background: rgb(243,243,243)">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Project Management of Rippletec</title>
+        <link rel="stylesheet" href="css/uikit.css">
+        <link rel="stylesheet" href="css/laydate.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/uikit.min.js"></script>
+        <script type="text/javascript" src="js/mission_edit.js"></script>
+        <script type="text/javascript" src="js/laydate.dev.js"></script>
+        <script type="text/javascript" src="js/same_func.js"></script>
+        <link rel="stylesheet" type="text/css" href="sweetalert/dist/sweetalert.css">
+        <script type="text/javascript" src='sweetalert/dist/sweetalert.min.js'></script>
+    </head>
+    <body style="background:#f3f3f3" class="uk-height-1-1">
+        <header class="head-navbar ">
+            <div class="header-lay uk-container-center">
+                <div class="logo uk-width-1-10 uk-float-left">LOGO</div>
+                <div class="headline uk-width-1-6 uk-float-left uk-margin--top">
+                    <div class="headline_lay">项目管理系统</div>
+                </div>
+                 <ul class="nav uk-nav uk-float-right">
+                <li class="user">
+                    <div class="user_pic"><img src="images/user_pic.jpg"></div>
+                    <div class="user_name">小明</div>
+                </li>
+                <li class="selector">&#xe700;
+                    <ul class="sel_list">
+                        <li class="index">首页</li>   
+                        <li class="set_task">创建项目</li>
+                   </ul>
+                </li>
+                <li class="news">&#xe731;
+                    <div class="news_num">1</div>
+                </li>
+                <li class="operation">&#xe68a;
+                    <ul class="operat_list">
+                        <li class="change_pas">修改密码</li>
+                        <li class="exit">退出登录</li>
+                    </ul>
+                </li>
+            </ul>
+            </div>
+            <div class="alert uk-container-center"></div>
+        </header>  
+
+       <div class="edit_content uk-container-center">
+           <div class="mission_top_title">
+               <div class="green uk-float-left"></div>
+                    <div class="mission_ico uk-float-left">&#xe791;</div>
+                    <div class=" uk-float-left" style="line-height:48px;font-size: 16px;">编辑任务</div>
+           </div>
+           <div class="edit_main">
+             <div class="mission_title">学生项目管理系统</div>
+           <div class="stage_select">
+             <div class="mission_line">
+               <div class="stage_select_title">阶段名称</div>
+             <input type="text" placeholder="请输入阶段名或选择阶段"  id="stage_select_text"></input>
+             <div class="stage_selector">
+               <ul class="selector_lay">
+     
+               </ul>
+             </div>
+             </div>
+           </div>
+           <div class="import_task_name">
+             <div class="task_name_line">
+               <div class="task_name_title">输入任务名称</div>
+               <input type="text" placeholder="text/可任意修改" id="import_task_name_text"></input>
+             </div>
+           </div>
+           <div class="add_men">
+              <div class="mission_line">
+               <div class="add_men_title">新增成员</div>
+             <input type="text" placeholder="请选择你要新增的成员"  id="add_men_text"></input>
+             <div class="add_men_selector">
+               <ul class="add_men_lay">
+          
+               </ul>
+             </div>
+             </div>
+           </div>
+           <div class="existing">
+              <div class="existing_line">
+                <div class="existing_title">已有成员</div>
+                  <div class="all_existed_men">
+                    <div class="existed_men">
+                  <div class="each_men">
+                   
+                  </div>
+                  
+                </div>
+                  </div>
+              </div>
+              <div class="clr"></div>
+           </div>
+           <div class="set_time">
+             <div class="set_time_lay">
+               <div class="set_time_title">设立阶段期限</div>
+               <div class="begin_time">
+                 <div id="begin_time_lay">2016-04-11</div>
+                 <div id="begin_sel_time" onclick="laydate();"><img src="images/time_sel.png"></div>
+               </div>
+               <div class="zhi">至</div>
+                <div class="end_time">
+                 <div id="end_time_lay">2016-04-11</div>
+                 <div id="end_sel_time" onclick="laydate();"><img src="images/time_sel.png"></div>
+               </div>
+             </div> 
+           </div>
+           <div class="task_complete">
+             <div class="task_complete_lay">完成</div>
+           </div>
+           </div>
+       </div>
+    </body>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript">
+      $('#begin_sel_time').on('click',function(){
+        laydate({
+          elem:'#begin_time_lay'
+        });
+      })
+       $('#end_sel_time').on('click',function(){
+        laydate({
+          elem:'#end_time_lay'
+        });
+      })
+
+
+
+
+
+
+    </script>
+</html>
